@@ -1,15 +1,18 @@
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main() {
-    std::cout 
-<< "Hello World!" 
-            << std::endl;
-    std::cout << "Number 1" << std::endl;
-    std::cout << "Number 2";
-
-    for (int i = 0; i < 10; ++i) {
-        std::cout << "this is my name 10 times" << std::endl;
+    string s;
+    cin >> s;
+    int n = s.length();
+    for (int i = 0; i < n / 2; i++) {
+        if (s[i] != s[n - i - 1]) {
+            cout << "No" << endl;
+            return 0;
+        }
     }
-
+    cout << "Yes" << endl;
     return 0;
 }
