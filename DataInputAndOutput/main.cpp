@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 
-
-int main() {
+int main()
+{
     // printing data
     std::cout << "Hello C++20" << std::endl;
 
@@ -20,7 +20,6 @@ int main() {
     // // you can take input like so
     // std::cin >> name;
     // std::cin >> age1;
-
 
     // // You can also add data like so in one line:
     // std::cin >> name >> age1;
